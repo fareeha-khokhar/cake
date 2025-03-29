@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <!-- google font -->
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+<!-- External CSS Link -->
+<link rel="stylesheet" href="assets/styling/styles.css">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="birthday.js"></script>
+</head>
+
+<body>
+    <!-- Navbar start -->
+    <header id="header"  class="position-sticky top-0" style="z-index:99;">
+        <!-- Custom Navbar -->
+      </header>
+    <!-- Navbar end -->
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero text-center py-5 mb-5">
+            <div class="container">
+                <h1 class="text-light mb-3 mt-3 hero-title text-warning display-1">Contact Us</h1>
+                <hr>
+                <p class="mb-1 hero-text text-warning h4">Get in touch with us for custom orders, inquiries,</p>
+                <p class="hero-text text-warning h4">or any questions you may have!</p> 
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Left Column: Contact Form -->
+                <div class="col-12 col-lg-6 mb-4 border border-dark rounded-3 p-4 ms-4">
+                    <div class="contact-form-container" id="messageForm">
+                        <h1 class="custom-heading mb-4">Contact Us</h1>
+                        <form>
+                           <!-- Name -->
+<div class="mb-3">
+    <label for="name" class="form-label text-warning h3">Your Name</label>
+    <div class="input-group">
+        <span class="input-group-text bg-warning"><i class="fas fa-user text-dark"></i></span>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+    </div>
+</div>
+
+<!-- Email -->
+<div class="mb-3">
+    <label for="email" class="form-label text-warning h3">Your Email</label>
+    <div class="input-group">
+        <span class="input-group-text bg-warning"><i class="fas fa-envelope text-dark"></i></span>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+    </div>
+</div>
+
+<!-- Message -->
+<div class="mb-3">
+    <label for="message" class="form-label text-warning h3">Your Message</label>
+    <div class="input-group">
+        <span class="input-group-text bg-warning"><i class="fas fa-comment-dots text-dark"></i></span>
+        <textarea class="form-control" id="message" rows="6" placeholder="Enter your message"></textarea>
+    </div>
+</div>
+
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-warning mx-auto" onclick="handleSubmit()">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right Column: Get in Touch Details -->
+                <div class="col-12 col-lg-5 mb-4 border border-dark rounded-3 p-4 ms-4">
+                    <div class="contact-form-container">
+                        <h2 class="text-dark mb-4 h1">Get in Touch</h2>
+                        <p class="">If you have any questions, custom order requests, or just want to learn more, feel free to reach out. We are here to make your dessert experience special!</p>
+
+                        <!-- Address -->
+                        <div class="mb-3">
+                            <h5 class="text-warning h3"><i class="fas fa-home"></i> Our Address</h5>
+                            <p class="">123 Sweet Street, Karachi, Pakistan</p>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="mb-3">
+                            <h5 class="text-warning h3"><i class="fas fa-phone-alt"></i> Phone</h5>
+                            <p class="">+92 300 123 4567</p>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <h5 class="text-warning h3"><i class="fas fa-envelope"></i> Email</h5>
+                            <p class="text-dark text-decoration-none text-reset email-css"><a href="mailto:fareehafatimakhokhar2004@gmail.com" class="email-css">fareehafatimakhokhar2004@gmail.com</a></p>
+                        </div>
+
+                        <!-- Working Hours -->
+                        <div>
+                            <h5 class="text-warning h3"><i class="fas fa-clock"></i> Working Hours</h5>
+                            <p class="">Monday to Friday: 9:00 AM - 6:00 PM</p>
+                            <p class="">Saturday & Sunday: Closed</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+        <section class="container mt-2">
+            <h2 class="custom-heading text-center mb-2 display-1">Our Location</h2>
+            <div id="map" class="mb-4" >
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.8317674940117!2d67.20312107505814!3d24.903719443525834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb337007d3ec103%3A0x574bbbdc0b32cacd!2sAptech%20Malir%20Center!5e0!3m2!1sen!2s!4v1735600485626!5m2!1sen!2s" width="100%" height="300" class="border border-warning" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border-radius:70px 0 70px 0;"></iframe>
+            </div>
+        </section>
+
+        <!-- FAQ's Section -->
+        <section class="container mt-2" id="faq-section">
+            <h2 class="custom-heading text-center mb-4 display-1">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush mb-4" id="accordionFlushExample">
+  
+                <!-- FAQ 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      What ingredients are used in your cakes?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Our cakes are made with high-quality ingredients such as flour, sugar, butter, eggs, and fresh fruits. We strive for the best taste in every product!</div>
+                  </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Do you offer vegan cakes?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Yes, we offer a variety of vegan cakes made with plant-based ingredients that maintain the same delicious flavor as our traditional cakes.</div>
+                  </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      How do I place an order for delivery?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">You can easily place an order through our website or by calling us directly. We offer reliable and efficient delivery services to ensure your cakes arrive fresh!</div>
+                  </div>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      Are your cakes customizable for special occasions?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Absolutely! We offer customized cakes for birthdays, weddings, and other celebrations. Let us know your preferences, and we will make your cake just the way you like it!</div>
+                  </div>
+                </div>
+                
+                <!-- FAQ 5 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                      How do you ensure the freshness of your cakes during delivery?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">We pack our cakes with care in insulated packaging to maintain their freshness during delivery. Our cakes arrive just as fresh as if you picked them up in person!</div>
+                  </div>
+                </div>
+              
+              </div>
+        </section>
+        <!-- Disclaimer Section -->
+ <section class="container mt-5 mb-5 bg-light" >
+  <h2 class="display-1 mb-3 text-center">Disclaimer</h2>
+  <div class="row mx-auto">
+      <div class="col-12 my-auto">
+        <p class="text-dark h6">
+          The information provided on this website is for general informational purposes only. While we strive to keep the information accurate and up-to-date, we make no warranties or representations about the accuracy, completeness, or reliability of the information provided. Any reliance you place on such information is therefore strictly at your own risk.
+      </p>
+      <p class="text-dark h6">
+          Please be advised that cakes may contain allergens such as gluten, dairy, eggs, nuts, and other ingredients that could cause allergic reactions. We take care in labeling our products, but cross-contamination may occur. Always check the ingredients carefully before consuming.
+      </p>
+      <p class="text-dark h6">
+          In no event will we be liable for any loss, damage, or allergic reactions arising from the consumption of cakes purchased from our website. All products are subject to availability. Prices and offers may change without prior notice. Please contact us directly for the most accurate and updated information.
+      </p>
+      
+    </div>
+  </div>
+</section>
+
+        <!-- Hero Section for Updates -->
+        <section class="hero2 text-center bg-warning p-4">
+            <h1 class="custom-heading">Stay Updated with Our Latest Cake Creations</h1>
+            <p class="text-dark">Sign up for our website to receive the freshest updates, new cake designs, seasonal flavors, and exclusive discounts!</p>
+            <button class="btn btn-dark fw-bold" type="button">
+                <a href="signup.html" style="text-decoration: none; color: inherit;">Sign Up</a>
+            </button>
+        </section>
+       
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+    
+    </footer>
+
+</body>
+</html>
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/footer.js"> </script>
+<script>
+function handleSubmit(event) {
+    event.preventDefault();
+    var messageField = document.getElementById('message');
+    if (messageField.value.trim() === "") {
+        alert("Please fill out the message before submitting.");
+    } else {
+        alert("Your request has been submitted!");
+        window.location.href = "index.html";
+    }
+}
+</script>

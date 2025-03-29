@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+.hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/images/banner1.jpeg');
+    height: 330px;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: #ffffff;
+}
+
+.custom-card {
+    transition: all 0.3s ease;
+}
+
+.custom-card:hover {
+    background-color: #ffc107;
+    color: black;
+}
+
+.text-black:hover .text-black,
+.text-black:hover .text-black,
+.custom-card:hover .fas {
+    color: black !important;
+}
+
+.custom-card .btn-warning {
+    transition: background-color 0.3s ease;
+}
+
+.custom-card:hover .btn-warning {
+    background-color: black;
+    color: white;
+}
+
+.custom-card .card-body {
+    transition: background-color 0.3s ease;
+}
+
+.custom-card:hover .card-body {
+    background-color: #ffc107;
+}
+
+.product-card {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card img {
+    object-fit: cover;
+    height: auto;
+}
+
+.product-card-body {
+    flex-grow: 1;
+    height:240px;
+}
+.offers-css {
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+.review-card {
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.review-avatar {
+    border: 2px solid #ffc107;
+}
+
+.card a img{
+    cursor: zoom-in;
+    
+}
+
+.email-css{
+    color:rgb(0, 0, 0);     
+    text-decoration: none;
+}
+.register-form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+
+}
+.about-cards{
+    background-color: #ffc107;
+    color: #212529;
+}
+.about-cards:hover {
+    background-color: #212529;
+    color: #ffc107;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Place an order for your favorite cake.">
+    <title>Order Form - The Cake</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styling/styles.css"> <!-- Link to your stylesheet -->
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar start -->
+    <header id="header"  class="position-sticky top-0" style="z-index:99;">
+    </header>
+    <!-- navbar end -->
+
+    <main>
+        <section class="order-section container py-5">
+            <div class="row m-0 p-0">
+                <div class="col-lg-6 col-md-6 col-sm-12 image-container">
+                    <h2 class="text-warning display-1 mb-3">Order Happiness </h2>
+                    <img src="assets/images/old_man.png" alt="Cake Image" class="img-fluid">
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 form-container mt-2">
+                    <form id="order-form" class="border border-dark rounded-3 p-4 register-form">
+                        
+                        <!-- Full Name -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label text-warning h5">Full Name</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-warning"><i class="fas fa-user text-dark"></i></span>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                            </div>
+                        </div>
+
+                        <!-- Email Address -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-warning h5">Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-warning"><i class="fas fa-envelope text-dark"></i></span>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+
+                        <!-- Contact Number and Item Code in One Line -->
+                        <div class="row mb-3">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <label for="contact-number" class="form-label text-warning h5">Contact Number</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-warning"><i class="fas fa-phone text-dark"></i></span>
+                                    <input type="tel" class="form-control" id="contact-number" placeholder="Enter your number" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <label for="item-code" class="form-label text-warning h5">Item Code</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-warning"><i class="fas fa-barcode text-dark"></i></span>
+                                    <input type="text" class="form-control" id="item-code" placeholder="Enter item code" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quantity and Delivery Date in One Line -->
+                        <div class="row mb-3">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <label for="quantity" class="form-label text-warning h5">Quantity</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-warning"><i class="fas fa-cogs text-dark"></i></span>
+                                    <input type="number" class="form-control" id="quantity" placeholder="Enter quantity" min="1" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <label for="delivery-date" class="form-label text-warning h5">Delivery Date</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-warning"><i class="fas fa-calendar-alt text-dark"></i></span>
+                                    <input type="date" class="form-control" id="delivery-date" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cake Type -->
+                        <div class="mb-3">
+                            <label for="cake-type" class="form-label text-warning h5">Cake Type</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-warning"><i class="fas fa-cake text-dark"></i></span>
+                                <select class="form-select" id="cake-type" required>
+                                    <option value="" disabled selected>Select cake type</option>
+                                    <option value="with egg">with Egg</option>
+                                    <option value="eggless">Eggless</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Delivery Address -->
+                        <div class="mb-3">
+                            <label for="address" class="form-label text-warning h5">Delivery Address</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-warning"><i class="fas fa-home text-dark"></i></span>
+                                <input type="text" class="form-control" id="delivery-address" placeholder="Enter delivery address" required>
+                            </div>
+                        </div>
+
+                        <!-- Special Instructions -->
+                        <div class="mb-3">
+                            <label for="instructions" class="form-label text-warning h5">Special Instructions</label>
+                            <textarea class="form-control" id="instructions" rows="3" placeholder="Any special instructions?" required></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-dark w-100">Place Order</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer starts -->
+    <footer class="bg-dark text-light py-5 mt-5">
+    </footer>
+    <!-- footer ends -->
+
+    <script>
+        document.getElementById('order-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var cakeType = document.getElementById('cake-type').value;
+            var itemCode = document.getElementById('item-code').value;
+            var quantity = document.getElementById('quantity').value;
+            var deliveryDate = document.getElementById('delivery-date').value;
+            var instructions = document.getElementById('instructions').value;
+            var address = document.getElementById('address').value;
+            var contactNumber = document.getElementById('contact-number').value;
+
+            alert("Your order has been placed successfully! \nDetails: \nName: " + name + "\nEmail: " + email + "\nCake Type: " + cakeType + "\nItem Code: " + itemCode + "\nQuantity: " + quantity + "\nDelivery Date: " + deliveryDate + "\nSpecial Instructions: " + instructions + "\nDelivery Address: " + address + "\nContact Number: " + contactNumber);
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/footer.js"></script>
